@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "description": "小型的http 服务，支持自动刷新页面",
   "main": "index.js",
+  "bin": "./src/index.js",
   "license": "MIT",
   "repository": "git@github.com:tinytot1/http-mini-server.git",
   "author": "tinytot1 <zh5172@qq.com>",
+  "publishConfig": {
+    "access": "public",
+    "registry": "http://registry.npmjs.org"
+  },
+  "scripts": {
+    "release": "standard-version --dry-run"
+  },
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
@@ -13,6 +21,7 @@
     "husky": "3.1.0",
     "lint-staged": "9.5.0",
     "prettier": "^1.19.1",
-    "rimraf": "^3.0.0"
+    "rimraf": "^3.0.0",
+    "standard-version": "^7.0.1"
   }
 }
