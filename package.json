@@ -1,0 +1,18 @@
+{
+  "name": "http-mini-server",
+  "version": "1.0.0",
+  "description": "小型的http 服务，支持自动刷新页面",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "git@github.com:tinytot1/http-mini-server.git",
+  "author": "tinytot1 <zh5172@qq.com>",
+  "devDependencies": {
+    "@commitlint/cli": "8.2.0",
+    "@commitlint/config-conventional": "8.2.0",
+    "eslint": "6.7.2",
+    "husky": "3.1.0",
+    "lint-staged": "9.5.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0"
+  }
+}
