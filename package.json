@@ -20,7 +20,7 @@
     "registry": "http://registry.npmjs.org"
   },
   "scripts": {
-    "release": "standard-version --dry-run"
+    "release": "standard-version"
   },
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
