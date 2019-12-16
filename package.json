@@ -20,7 +20,7 @@
     "registry": "http://registry.npmjs.org"
   },
   "scripts": {
-    "release": "standard-version"
+    "release": "standard-version && git add . && git push --follow-tags origin master && npm publish"
   },
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
