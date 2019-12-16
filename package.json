@@ -1,9 +1,17 @@
 {
   "name": "http-mini-server",
   "version": "1.0.0",
-  "description": "小型的http 服务，支持自动刷新页面",
+  "description": "小型的命令行工具 http 服务，支持自动刷新页面",
   "main": "index.js",
-  "bin": "./src/index.js",
+  "keywords": [
+    "Command line tools",
+    "serve",
+    "static",
+    "http"
+  ],
+  "bin": {
+    "http-mini-server": "./src/index.js"
+  },
   "license": "MIT",
   "repository": "git@github.com:tinytot1/http-mini-server.git",
   "author": "tinytot1 <zh5172@qq.com>",
@@ -23,5 +31,9 @@
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
     "standard-version": "^7.0.1"
+  },
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-serve-static": "^1.0.0"
   }
 }
