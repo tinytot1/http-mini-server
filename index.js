@@ -8,11 +8,14 @@ const root = process.cwd();
 
 const program = require("commander");
 
-program
-  .version(`http-mini-server ${require("./package").version}`)
-  .option("-p, --port <number>", "service port", parseInt, 8080);
+program.version(`http-mini-server ${require("./package").version}`).option("-p, --port <number>", "service port", 8080);
 
-program.on("--help", function() {});
+program.on("--help", () => {
+  console.log("");
+  console.log("Examples:");
+  console.log("  $ http-mini-server --port 8081");
+  console.log("  $ http-mini-server");
+});
 
 program.parse(process.argv);
 

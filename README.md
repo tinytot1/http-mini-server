@@ -16,6 +16,8 @@ $ http-mini-server
 
 ## Options
 
-| options | default |         memo |
-| :------ | :-----: | -----------: |
-| --prot  |  8080   | service port |
+| options             |                  description |
+| :------------------ | ---------------------------: |
+| -V, --version       |    output the version number |
+| -p, --port <number> | service port (default: 8080) |
+| -h, --help          |     output usage information |
