@@ -4,27 +4,19 @@ const gulp = require("gulp");
 const watch = require("gulp-watch");
 const connect = require("gulp-connect");
 const portfinder = require("portfinder");
-const meow = require("meow");
 const root = process.cwd();
 
-const { flags } = meow(
-  `
-  Usage
-    $ http-mini-server
+const program = require("commander");
 
-  Options
-    --port, server start port`,
-  {
-    flags: {
-      port: {
-        type: "string",
-        default: "8080"
-      }
-    }
-  }
-);
+program
+  .version(`http-mini-server ${require("./package").version}`)
+  .option("-p, --port <number>", "service port", parseInt, 8080);
 
-portfinder.getPortPromise({ port: flags.port }).then(port => {
+program.on("--help", function() {});
+
+program.parse(process.argv);
+
+portfinder.getPortPromise({ port: program.port }).then(port => {
   connect.server({
     root,
     port,
