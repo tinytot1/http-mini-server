@@ -22,6 +22,7 @@ program.parse(process.argv);
 portfinder.getPortPromise({ port: program.port }).then(port => {
   connect.server({
     root,
+    host: "0.0.0.0",
     port,
     livereload: true
   });
