@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/tinytot1/http-mini-server/compare/v1.3.1...v1.3.2) (2020-03-19)
+
+### Bug Fixes
+
+- 修复不能 ip 访问 ([34dd5ef](https://github.com/tinytot1/http-mini-server/commit/34dd5effe2f6e992b63d156d9a8e6a55cbe9e6c3))
+
 ### [1.3.1](https://github.com/tinytot1/http-mini-server/compare/v1.3.0...v1.3.1) (2019-12-17)
 
 ### Bug Fixes
